@@ -1,0 +1,2275 @@
+
+/*
+CSS Reset
+**/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*
+Font
+**/
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+/**
+General Styles
+**/
+
+body {
+	margin: 0;
+	background: #D1CFD0;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+p {
+	line-height: 25px;
+}
+
+.activeNav{
+	background-color: white;
+}
+
+/** ========================
+ABOUT PAGE
+==========================
+**/
+
+/**
+General Navigation Styles
+**/
+
+nav header {
+	background-color: #FFD145;
+}
+
+nav {
+	background-color: #FFD145;
+}
+
+.banner #logo {
+	color: #444;
+	font-size: 30px;
+}
+
+nav li a {
+	color: #000;
+	text-decoration: none;
+}
+
+/* this is my accessibilty which will increase the text size for someone who has bad eye sight*/
+nav li a:hover{
+	background-color: #555;
+	color: white;
+	font-size: 25px;
+}
+
+/**
+Mobile & Tablet Navigation Styles
+**/
+
+@media (max-width: 1200px) {
+
+.banner{
+	height: 60px;
+}
+
+.banner #logo {
+	margin: 0 auto;
+	padding-top: 10px;
+	text-align: center;
+}
+
+nav li a {
+	display: block;
+	padding: 8px 16px;
+	text-align: center;
+	border-bottom: 3px solid;
+	background-color: #F1F1F1;
+ }
+}
+
+
+/**
+Desktop Navigation Styles
+**/
+
+@media (min-width: 1200px) {
+
+nav {
+	overflow: hidden;
+	width: 100%;
+}
+
+nav .banner{
+	float: left;
+}
+
+nav #logo {
+	margin-top: -10px;
+	padding-top: 25px;
+	margin-left: 70px;
+}
+
+nav #nav-items{
+	float: right;
+	margin-right: 50px;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 70px;
+	padding-top: 23px;
+	position: relative;
+}
+
+nav a {
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+nav a:hover {
+	color: #000;
+}
+/* This is an animation when the user hovers over the a link then a line will appear on top */
+nav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	background-color: #444;
+
+	position: absolute;
+	top: 0;
+	width: 0%;
+
+	transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+	width: 100%;
+}
+
+}
+
+/**
+General Styles
+**/
+
+#myPic {
+	border-radius: 50%;
+	width: 190px;
+	height: 190px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 0 auto;
+	border: 3px solid white;
+}
+
+#skillsImg{
+	width: 70px;
+	height: 70px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+}
+
+#about-course-Img {
+	width: 70px;
+	height: 70px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+}
+
+.intro-header {
+	text-align: center;
+}
+
+.intro-header h2 {
+	display: inline-block;
+	border-bottom: 3px solid;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-weight: bold;
+}
+
+
+/**
+mobile about page style
+**/
+
+@media (max-width: 750px){
+
+#myPic {
+	border-radius: 50%;
+	width: 190px;
+	height: 190px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 10px auto;
+	border: 3px solid white;
+}
+
+#about-content-container {
+	background: #585858;
+	overflow: hidden;
+	padding: 40px 0 0 0;
+	width: 100%;
+}
+
+#about-content-container .portfolioContent {
+	float: left;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+#introduction-img{
+	width: 70px;
+	height: 70px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+}
+
+#about-introduction{
+	background:white;
+	width:80%;
+	margin: 40px auto 0 auto;
+	border-radius: 10px;
+}
+
+#about-introduction p{
+	padding: 20px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 25px;
+}
+#about-gcse-qulification h2{
+	background: #FFD145;
+}
+
+#about-gcse-qulification {
+	background:white;
+	width:80%;
+	margin: 30px auto 0 auto;
+}
+
+#about-gcse-qulification h2{
+	border-bottom: 1px solid black;
+	text-align: left;
+	font-weight: bold;
+}
+
+#about-gcse-qulification table{
+	width:100%;
+}
+
+#about-gcse-qulification th{
+	text-align: center;
+}
+
+#about-gcse-qulification td{
+	text-align: center;
+}
+
+#about-gcse-qulification table,th,td{
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+	border-collapse: collapse;
+	overflow: hidden;
+}
+
+
+#about-alevel-qulification {
+	background:white;
+	width:80%;
+	margin: 30px auto 0 auto;
+}
+
+#about-alevel-qulification h2{
+	background: #FFD145;
+}
+
+#about-alevel-qulification h2{
+	border-bottom: 1px solid black;
+	text-align: left;
+}
+
+#about-alevel-qulification table{
+	width:100%;
+}
+
+#about-alevel-qulification th{
+	text-align: center;
+}
+#about-alevel-qulification td{
+	text-align: center;
+}
+
+#about-alevel-qulification table,th,td{
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+	border-collapse: collapse;
+	border-radius: 10px;
+	overflow: hidden;
+
+}
+#about-skills{
+	background:white;
+	width:80%;
+	margin: 23px auto 0 auto;
+	border-radius: 10px;
+}
+
+#about-skills hr{
+	width: 20%;
+	height:2px;
+	background-color: black;
+	margin-left: 130px;
+}
+
+#about-skills p{
+	padding: 20px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+#about-chosen-course{
+	background:white;
+	width:80%;
+	margin: 20px auto 0 auto;
+	border-radius: 10px;
+}
+
+#about-chosen-course hr{
+	width: 85%;
+	height:2px;
+	background-color: black;
+	margin-left: 30px;
+}
+
+
+#about-chosen-course p{
+	padding: 20px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+}
+
+/**
+Tablet & Desktop about page styles
+**/
+
+@media (min-width: 750px) {
+
+#about-Me {
+	background-color: #585858;
+	width: 60%;
+}
+
+#about-content-container {
+	background: #585858;
+	overflow: hidden;
+	padding: 40px 0 0 0;
+	width: 100%;
+}
+
+#about-content-container .portfolioContent {
+	float: left;
+	border-radius: 10px;
+	margin: 0 2.5% 0 2.5%;
+	margin-bottom: 10px;
+}
+
+#introduction-img{
+	width: 70px;
+	height: 70px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+}
+
+#about-introduction{
+	background:white;
+	width:80%;
+	margin: 40px auto 0 auto;
+	border-radius: 10px;
+}
+
+#about-introduction p{
+	padding: 20px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+#about-gcse-qulification h2{
+	background: #FFD145;
+}
+
+#about-gcse-qulification {
+	background:white;
+	width:80%;
+	margin: 30px auto 0 auto;
+}
+
+#about-gcse-qulification h2{
+	border-bottom: 1px solid black;
+	text-align: left;
+	font-weight: bold;
+}
+
+#about-gcse-qulification table{
+	width:100%;
+}
+
+#about-gcse-qulification th{
+	text-align: center;
+}
+#about-gcse-qulification td{
+	text-align: center;
+}
+
+#about-gcse-qulification table,th,td{
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+	border-collapse: collapse;
+	overflow: hidden;
+}
+
+#about-alevel-qulification {
+	background:white;
+	width:80%;
+	margin: 30px auto 0 auto;
+}
+
+#about-alevel-qulification h2{
+	background: #FFD145;
+}
+
+#about-alevel-qulification h2{
+	border-bottom: 1px solid black;
+	text-align: left;
+}
+
+#about-alevel-qulification table{
+	width:100%;
+}
+
+#about-alevel-qulification th{
+	text-align: center;
+}
+
+#about-alevel-qulification td{
+	text-align: center;
+}
+
+#about-alevel-qulification table,th,td{
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+	border-collapse: collapse;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+#about-extra-information {
+	background-color: #585858;
+	width: 30%;
+}
+
+#about-skills{
+	background:white;
+	width:80%;
+	margin: 235px auto 0 auto;
+	border-radius: 10px;
+}
+
+#about-skills hr{
+	width: 20%;
+	height:2px;
+	background-color: black;
+	margin-left: 130px;
+}
+
+#about-skills p{
+	padding: 20px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+#about-chosen-course{
+	background:white;
+	width:80%;
+	margin: 20px auto 0 auto;
+	border-radius: 10px;
+}
+
+#about-chosen-course hr{
+	width: 85%;
+	height:2px;
+	background-color: black;
+	margin-left: 30px;
+}
+
+#about-chosen-course p{
+	padding: 20px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 25px;
+ }
+
+}
+
+/** ========================
+UNIT 1 PAGE
+========================
+**/
+
+/**
+unit 1 page general style
+**/
+
+.intro-header {
+	text-align: center;
+}
+
+.intro-header h2 {
+	display: inline-block;
+	border-bottom: 3px solid;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-weight: bold;
+}
+
+.intro-header img{
+	margin: 0 auto;
+	display: block;
+}
+
+.unitsSection h2{
+	margin-bottom: 10px;
+}
+
+#javaLogoImg{
+	border-radius: 50%;
+	border: 5px solid white;
+	background-color: white;
+}
+
+#unit1-introduction-to-programming{
+	background-color: white;
+}
+
+#unit1-week-1-Programming{
+	background-color: #74b9ff;
+}
+
+#unit1-week-2-programming{
+	background-color: #81ecec;
+}
+
+#unit1-week-3-programming{
+	background-color: #55efc4;
+}
+
+#unit1-how-i-feel-about-the-course{
+	background-color: #d63031;
+	padding-bottom: 10px;
+}
+
+/**
+mobile unit 1 page styles
+**/
+@media (max-width: 750px){
+
+#programmingLogoImg {
+	width: 200px;
+}
+
+#javaLogoImg{
+	width: 200px;
+	margin-top: 10px;
+}
+
+.unitsSection h2{
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.introduction-section p{
+	text-align: center;
+	margin: 0px auto;
+	padding: 20px 90px;
+}
+
+#unit1-week-1-code-img{
+	display: block;
+	height: 300px;
+	margin: 10px auto 0 auto;
+}
+
+#unit1-week-1-stickman-img{
+	display: block;
+	height: 300px;
+	margin: 10px auto 0 auto;
+}
+
+#unit1-week-1-paragraph{
+	padding: 20px 80px;
+	text-align: center;
+	margin-left: 10px;
+	font-size: 20px;
+}
+
+#unit1-week-2-code-img{
+	display: block;
+	width: 100%;
+	margin: 10px auto 0 auto;
+}
+
+#unit1-week-2-loops-img{
+	display: block;
+	height: 300px;
+	margin: 10px auto 0 auto;
+}
+
+#unit1-week-2-paragraph{
+	padding: 20px 80px;
+	text-align: center;
+	margin-left: 10px;
+	font-size: 20px;
+}
+
+#unit1-week-3-code-img{
+	display: block;
+	height: 300px;
+	margin: 10px auto 0 auto;
+}
+
+#unit1-week-3-nought-and-crosses-img{
+	display: block;
+	height: 300px;
+	margin: 10px auto 0 auto;
+}
+
+#unit1-week-3-paragraph{
+	padding: 20px 80px;
+	text-align: center;
+	margin-left: 10px;
+	font-size: 20px;
+}
+
+#unit1-main-content-how-i-feel-about-the-course {
+	width: 320px;
+	margin: 20px auto;
+	padding: 10px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#unit1-main-content-how-i-feel-about-the-course p{
+	background-color: white;
+	text-align: center;
+	padding: 10px 0;
+	font-size: 20px;
+}
+
+}
+
+/**
+Tablet unit 1 page styles
+**/
+
+@media (min-width: 750px) and (max-width:1200px) {
+
+#javaLogoImg{
+	width: 200px;
+	margin-top: 10px;
+}
+
+#programmingLogoImg {
+	width: 200px;
+}
+
+.unitsSection h2{
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 45px;
+}
+
+.introduction-section{
+	background-color: white;
+}
+
+.introduction-section p{
+	text-align: center;
+	padding: 20px 80px;
+	width: 340px;
+	margin: 0 auto;
+}
+
+#unit1-week-1-code-img{
+	display: block;
+	height: 300px;
+	margin: 30px auto 0 auto;
+}
+
+#unit1-week-1-stickman-img{
+	display: block;
+	height: 300px;
+	margin: 30px auto 0 auto;
+}
+
+#unit1-week-1-paragraph{
+	display: block;
+	padding: 20px 80px;
+	text-align: center;
+	font-size: 18px;
+}
+
+#unit1-week-2-code-img{
+	display: block;
+	height: 300px;
+	margin: 30px auto 0 auto;
+}
+
+#unit1-week-2-loops-img{
+	display: block;
+	height: 300px;
+	margin: 30px auto 0 auto;
+}
+
+#unit1-week-2-paragraph{
+	display: block;
+	padding: 20px 80px;
+	text-align: center;
+	font-size: 18px;
+}
+
+#unit1-week-3-code-img{
+	display: block;
+	height: 300px;
+	margin: 30px auto 0 auto;
+}
+
+#unit1-week-3-nought-and-crosses-img{
+	display: block;
+	height: 300px;
+	margin: 30px auto 0 auto;
+}
+
+#unit1-week-3-paragraph{
+	display: block;
+	padding: 20px 80px;
+	text-align: center;
+	font-size: 18px;
+}
+
+#unit1-main-content-how-i-feel-about-the-course {
+	width: 500px;
+	margin: 20px auto;
+	padding: 10px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#unit1-main-content-how-i-feel-about-the-course p{
+	background-color: white;
+	text-align: center;
+	padding: 10px 0;
+	font-size: 18px;
+ }
+
+}
+/**
+Desktop unit 1 page styles
+**/
+
+@media (min-width: 1200px) {
+
+.introduction-section p{
+	padding: 20px 200px;
+	text-align: center;
+}
+
+.unitsSection{
+	background: #C0C0C0;
+	overflow: hidden;
+	padding: 40px 0 0 0;
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+}
+
+.unitsSection h2{
+	margin-bottom: 10px;
+}
+
+#unit1-content-container {
+	background: #D1CFD0;
+	overflow: hidden;
+	width: 100%;
+}
+
+#unit1-content-container .portfolioContent {
+	float: left;
+	border-radius: 10px;
+	margin: 0 1.66% 0 1.66%;
+	margin-bottom: 10px;
+}
+
+#javaLogoImg{
+	width: 150px;
+	height: 150px;
+	margin-top: 10px;
+}
+
+.introduction-section{
+	width:100%;
+	margin: 5px auto 0 auto;
+	display: block;
+}
+
+.introduction-section hr{
+	width: 85%;
+	height:2px;
+	background-color: black;
+	margin-left: 30px;
+}
+
+
+#programmingLogoImg {
+	width: 70px;
+	height: 70px;
+	padding-top: 15px;
+}
+
+#unit1-main-content-for-week-1{
+	width: 1200px;
+	overflow: hidden;
+	margin: 10px auto 0 auto;
+
+}
+
+.unit-section{
+	width: 1200px;
+	overflow: hidden;
+	margin: 10px auto 0 auto;
+}
+
+#unit1-main-content-how-i-feel-about-the-course{
+	width: 500px;
+	height: 260px;
+	overflow: hidden;
+	margin: 10px auto 0 auto;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#unit1-main-content-how-i-feel-about-the-course p {
+	width: 450px;
+	overflow: hidden;
+	background-color: white;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+
+.unit-item{
+	margin: 0 1.66%;
+	width: 30%;
+	float:left;
+}
+
+.unit-item img {
+	max-width: 100%;
+	margin-left: 10px;
+	margin-top: 40px;
+	}
+
+}
+
+/** ========================
+UNIT 2 PAGE
+========================
+**/
+
+/**
+unit 2 page general style
+**/
+
+.intro-header img{
+	margin: 0 auto;
+	display: block;
+}
+
+.unitsSection h2{
+	margin-bottom: 10px;
+}
+
+#htmlAndCssImg{
+	border-radius: 50%;
+	border: 5px solid white;
+	background-color: white;
+}
+
+#unit2-introduction-to-web-design-and-development{
+	background-color: white;
+}
+
+#unit2-week1-web-design-and-development{
+	background-color: #6c5ce7;
+}
+
+#unit2-week-2-web-design-and-development{
+	background-color: #ffeaa7;
+}
+
+#unit2-week-3-web-design-and-development{
+	background-color: #F28A00;
+}
+
+#unit2-how-i-feel-about-the-course{
+	background-color: #b71540;
+	padding-bottom: 5px;
+}
+
+
+/**
+mobile unit 2 page styles
+**/
+
+
+@media (max-width: 750px){
+#htmlAndCssImg {
+	width: 20%;
+	margin-top: 20px;
+}
+
+#webDesignAndDevelopmentImg{
+	width: 20%;
+	padding-top: 20px;
+}
+
+.unitsSection h2{
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.introduction-section p{
+	text-align: center;
+	margin: 0px auto;
+	padding: 20px 50px;
+}
+
+#Week1HtmlImg{
+	display: block;
+	margin: 30px auto 0 auto;
+	width: 80%;
+}
+
+#Week1HtmlCodeImg{
+	display: block;
+	margin: 10px auto 0 auto;
+	width: 80%;
+}
+
+#unit2-week-1-paragraph{
+	padding: 20px 20px;
+	text-align: center;
+	margin-left: 10px;
+	font-size: 18px;
+}
+
+#week2HtmlCodeImg{
+	display: block;
+	width: 90%;
+	margin: 30px auto 0 auto;
+}
+
+#Week2CssCodeImg{
+	display: block;
+	height: 300px;
+	margin: 10px auto 0 auto;
+	width: 80%;
+	padding: 20px;
+}
+
+#exerciseWebPageImg{
+	display: block;
+	margin: 5px auto 0 auto;
+	width: 80%;
+	padding: 30px 10px;
+}
+
+#unit2-week-2-paragraph{
+	padding: 20px 20px;
+	text-align: center;
+	margin-left: 10px;
+	font-size: 18px;
+}
+
+#Week3HtmlCodeImg{
+	display: block;
+	margin: 30px auto 0 auto;
+	width: 80%;
+}
+
+#Week3exerciseImg{
+	display: block;
+	margin: 10px auto 0 auto;
+	width: 90%;
+}
+
+#Week3CssCodeImg{
+	display: block;
+	height: 300px;
+	margin: 10px auto 0 auto;
+	width: 90%;
+	padding-bottom: 20px;
+}
+
+#unit2-week-3-paragraph{
+	padding: 20px 20px;
+	text-align: center;
+	margin-left: 10px;
+	font-size: 18px;
+}
+
+#unit2-main-content-how-i-feel-about-the-course{
+	width: 80%;
+	height: 300px;
+	overflow: hidden;
+	margin: 20px auto 0 auto;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#unit2-main-content-how-i-feel-about-the-course p {
+	overflow: hidden;
+	background-color: white;
+	text-align: center;
+	margin-left: 10px;
+	padding: 15px;
+	font-size: 18px;
+	}
+}
+
+/**
+Tablet unit 2 page styles
+**/
+
+@media (min-width: 750px) and (max-width:1200px) {
+
+#htmlAndCssImg{
+	width: 200px;
+	margin-top: 10px;
+}
+
+#webDesignAndDevelopmentImg {
+	width: 200px;
+}
+
+.unitsSection h2{
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 25px;
+	padding-bottom: 20px;
+}
+
+.introduction-section{
+	background-color: white;
+}
+
+.introduction-section p{
+	text-align: center;
+	padding: 20px 80px;
+	width: 340px;
+	margin: 0 auto;
+}
+
+#Week1HtmlImg{
+	display: block;
+	height: 300px;
+	margin: 30px auto 0 auto;
+}
+
+#Week1HtmlCodeImg{
+	display: block;
+	height: 300px;
+	margin: 30px auto 0 auto;
+}
+
+#unit2-week-1-paragraph{
+	display: block;
+	padding: 20px 80px;
+	text-align: center;
+	font-size: 20px;
+}
+
+#week2HtmlCodeImg{
+	display: block;
+	height: 300px;
+	margin: 30px auto 0 auto;
+}
+
+#Week2CssCodeImg{
+	display: block;
+	height: 600px;
+	margin: 30px auto 0 auto;
+	width: 400px;
+}
+
+#unit2-week-2-paragraph{
+	display: block;
+	padding: 20px 80px;
+	text-align: center;
+	font-size: 20px;
+}
+#exerciseWebPageImg{
+	display: block;
+	padding: 20px 20px;
+	text-align: center;
+	font-size: 20px;
+	margin: 0 auto;
+}
+
+#Week3HtmlCodeImg{
+	display: block;
+	height: 300px;
+	margin: 30px auto 0 auto;
+}
+
+#Week3exerciseImg{
+	display: block;
+	height: 300px;
+	margin: 30px auto 0 auto;
+}
+
+#Week3CssCodeImg{
+	display: block;
+	height: 300px;
+	margin: 30px auto 0 auto;
+	padding-bottom: 20px;
+}
+
+#unit2-week-3-paragraph{
+	display: block;
+	padding: 20px 80px;
+	text-align: center;
+	font-size: 20px;
+}
+
+#unit2-main-content-how-i-feel-about-the-course{
+	width: 500px;
+	margin: 20px auto;
+	padding: 10px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#unit2-main-content-how-i-feel-about-the-course p{
+	background-color: white;
+	text-align: center;
+	padding: 10px 0;
+	font-size: 20px;
+	}
+
+}
+
+/**
+Desktop unit 2 page styles
+**/
+@media (min-width: 1200px) {
+
+#unit2-content-container {
+	background: #D1CFD0;
+	overflow: hidden;
+	padding: 40px 0 0 0;
+	width: 100%;
+}
+
+#unit2-content-container  .portfolioContent {
+	float: left;
+	border-radius: 10px;
+	margin: 0 1.66% 0 1.66%;
+	margin-bottom: 10px;
+}
+
+#htmlAndCssImg{
+	width: 90px;
+	height: 90px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+	border-radius: 3px solid white;
+}
+
+#unit2-introduction-to-web-design-and-development{
+	background:white;
+	width:100%;
+	margin: 5px auto 5px auto;
+}
+
+#webDesignAndDevelopmentImg {
+	width: 70px;
+	height: 70px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+}
+
+#unit2-web-design-and-development-main-content p{
+	width: 900px;
+	text-align: center;
+	margin: 0px auto;
+	padding: 20px 0;
+
+}
+
+#unit2-week1-web-design-and-development{
+	background-color: #f6b93b;
+}
+
+#unit2-main-content-for-week-1{
+	width: 1200px;
+	overflow: hidden;
+	margin: 10px auto 0 auto;
+}
+
+
+#unit2-main-content-for-week-1 p{
+	overflow: hidden;
+}
+#unit2-week-2-web-design-and-development{
+	background-color: #4a69bd;
+}
+
+#unit2-main-content-for-week2{
+	width: 1200px;
+	overflow: hidden;
+	margin: 50px auto 0 auto;
+}
+
+#unit2-main-content-for-week2 p{
+	text-align: center;
+	padding: 20px;
+}
+
+#unit2-week-3-web-design-and-development{
+	background-color: #e58e26;
+}
+
+#unit2-main-content-for-week-3{
+	width: 1200px;
+	overflow: hidden;
+	margin: 10px auto 0 auto;
+}
+
+#unit2-main-content-for-week-3 p{
+	text-align: center;
+	padding: 20px;
+}
+
+#unit2-how-i-feel-about-the-course{
+	background-color: #b71540;
+	padding-bottom: 5px;
+}
+
+#unit2-main-content-how-i-feel-about-the-course{
+	width: 500px;
+	height: 200px;
+	overflow: hidden;
+	margin: 10px auto 0 auto;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#unit2-main-content-how-i-feel-about-the-course p {
+	width: 450px;
+	overflow: hidden;
+	background-color: white;
+	text-align: center;
+	padding: 20px 20px;
+	}
+}
+
+/** ========================
+UNIT 3 PAGE
+========================
+**/
+
+/**
+unit 3 page general style
+**/
+
+.intro-header img{
+	margin: 0 auto;
+	display: block;
+}
+
+.unitsSection h2{
+	margin-bottom: 10px;
+}
+
+#InformationSystemImg{
+	border-radius: 50%;
+	border: 5px solid white;
+	background-color: white;
+}
+
+#unit3-introduction-to-information-systems{
+	background-color: white;
+}
+
+#unit3-week-1-information-system{
+	background-color: #00cec9;
+}
+
+#unit3-week-2-information-system{
+	background-color: #0984e3;
+}
+
+#unit3-week-3-information-system{
+	background-color: #e17055;
+}
+
+#unit3-how-i-feel-about-the-course{
+	background-color: #b71540;
+	padding-bottom: 5px;
+}
+
+/**
+mobile unit 3 page styles
+**/
+@media (max-width: 750px){
+
+#InformationSystemImg {
+	width: 20%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+#databaseLogo {
+	width: 100px;
+	padding-top: 10px;
+}
+
+/* This is a class which has the styles for each of the unit section */
+.unitsSection h2{
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+/* This is a class which has the styles for each of the introduction section */
+.introduction-section p{
+	text-align: center;
+	margin: 0px auto;
+	padding: 20px 50px;
+}
+
+#Week1PowerPointImg{
+	display: block;
+	margin: 40px auto 0 auto;
+	width: 80%;
+}
+
+#Week1BusinessEnviromentImg{
+	display: block;
+	margin: 10px auto 0 auto;
+	width: 80%;
+}
+
+#unit3-week-1-paragraph{
+	padding: 20px 20px;
+	text-align: center;
+	margin-left: 10px;
+	font-size: 18px;
+}
+
+#Week2CompentsOfManagementIsImg{
+	display: block;
+	width: 90%;
+	margin: 10px auto 0 auto;
+}
+
+#Week2SwotAnalysisImg{
+	display: block;
+	height: 800px;
+	margin: 10px auto 0 auto;
+	width: 90%;
+	padding: 20px;
+}
+
+
+#unit3-week-2-paragraph{
+	padding: 20px 20px;
+	text-align: center;
+	margin-left: 10px;
+	font-size: 18px;
+}
+
+#Week3BibliograpghyImg{
+	display: block;
+	margin: 10px auto 0 auto;
+	width: 90%;
+}
+
+#Week3RationalUnifiedProcessImg{
+	display: block;
+	margin: 10px auto 0 auto;
+	width: 90%;
+}
+
+
+#unit3-week-3-paragraph{
+	padding: 20px 20px;
+	text-align: center;
+	margin-left: 10px;
+	font-size: 18px;
+}
+
+#unit3-main-content-how-i-feel-about-the-course{
+	width: 320px;
+	height: 250px;
+	overflow: hidden;
+	margin: 10px auto 0 auto;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#unit3-main-content-how-i-feel-about-the-course p {
+	overflow: hidden;
+	background-color: white;
+	text-align: center;
+	margin-left: 10px;
+	padding-top: 15px;
+	padding-right: 10px;
+	font-size: 18px;
+	}
+}
+
+/**
+Tablet unit 3 page styles
+**/
+
+@media (min-width: 750px) and (max-width:1200px) {
+
+#InformationSystemImg{
+	width: 200px;
+	margin: 10px auto;
+	display: block;
+}
+
+#databaseLogo {
+	width: 100px;
+}
+
+.unitsSection h2{
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 45px;
+}
+
+.introduction-section{
+	background-color: white;
+}
+
+.introduction-section p{
+	text-align: center;
+	padding: 20px 80px;
+	width: 340px;
+	margin: 0 auto;
+}
+
+#Week1PowerPointImg{
+	display: block;
+	height: 300px;
+	margin: 30px auto 0 auto;
+}
+
+#Week1BusinessEnviromentImg{
+	display: block;
+	height: 300px;
+	margin: 30px auto 0 auto;
+}
+
+#unit3-week-1-paragraph{
+	display: block;
+	padding: 20px 80px;
+	text-align: center;
+	font-size: 20px;
+}
+
+#Week2CompentsOfManagementIsImg{
+	display: block;
+	height: 300px;
+	margin: 30px auto 0 auto;
+}
+
+#Week2SwotAnalysisImg{
+	display: block;
+	height: 600px;
+	margin: 30px auto 0 auto;
+	width: 400px;
+}
+
+#unit3-week-2-paragraph{
+	display: block;
+	padding: 20px 80px;
+	text-align: center;
+	font-size: 20px;
+}
+
+#Week3BibliograpghyImg{
+	display: block;
+	height: 300px;
+	margin: 30px auto 0 auto;
+}
+
+#Week3RationalUnifiedProcessImg{
+	display: block;
+	height: 300px;
+	margin: 30px auto 0 auto;
+}
+
+#unit3-week-3-paragraph{
+	display: block;
+	padding: 20px 80px;
+	text-align: center;
+	font-size: 20px;
+}
+
+#unit3-main-content-how-i-feel-about-the-course{
+	width: 500px;
+	margin: 20px auto;
+	padding: 10px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#unit3-main-content-how-i-feel-about-the-course p{
+	background-color: white;
+	text-align: center;
+	padding: 10px 0;
+	font-size: 20px;
+	}
+
+}
+
+/**
+Desktop unit 3 page styles
+**/
+@media (min-width: 1200px) {
+
+
+
+#unit3-content-container{
+	background: #585858;
+	overflow: hidden;
+	width: 100%;
+}
+
+#unit3-content-container  .portfolioContent {
+	float: left;
+	border-radius: 10px;
+	margin: 0 1.66% 0 1.66%;
+	margin-bottom: 10px;
+}
+
+
+#InformationSystemImg{
+	width: 90px;
+	height: 90px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+	border-radius: 3px solid white;
+}
+
+#unit3-introduction-to-information-systems{
+	background:white;
+	width:100%;
+	margin: 5px auto 5px auto;
+}
+
+#databaseLogo {
+	width: 70px;
+	height: 70px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+}
+
+#unit3-week-1-information-system{
+	background-color: #f6b93b;
+
+}
+#unit3-main-content-for-week-1{
+	width: 1200px;
+	overflow: hidden;
+	margin: 10px auto 0 auto;
+}
+
+
+#unit3-main-content-for-week-1 p{
+	overflow: hidden;
+}
+
+#unit3-week-2-information-system{
+	background-color: #4a69bd;
+}
+
+#unit3-main-content-for-week-2{
+	width: 1200px;
+	overflow: hidden;
+	margin: 50px auto 0 auto;
+}
+
+#unit3-main-content-for-week-2 p{
+	text-align: center;
+	padding: 20px;
+}
+
+#unit3-week-3-information-system{
+	background-color: #e58e26;
+}
+
+#unit3-main-content-for-week-3{
+	width: 1200px;
+	overflow: hidden;
+	margin: 10px auto 0 auto;
+}
+
+#unit3-main-content-for-week-3 p{
+	text-align: center;
+	padding: 20px;
+}
+
+#unit3-how-i-feel-about-the-course{
+	background-color: #b71540;
+	padding-bottom: 10px;
+}
+
+#unit3-main-content-how-i-feel-about-the-course{
+	width: 500px;
+	height: 200px;
+	overflow: hidden;
+	margin: 10px auto 0 auto;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#unit3-main-content-how-i-feel-about-the-course p {
+	width: 450px;
+	overflow: hidden;
+	background-color: white;
+	text-align: center;
+	padding: 20px 20px;
+}
+
+.unit-item{
+	margin: 0 1.66%;
+	width: 30%;
+	float:left;
+}
+
+
+.unit-item img {
+	max-width: 100%;
+	margin-left: 10px;
+	margin-top: 40px;
+	}
+}
+
+/** ========================
+UNIT 4 PAGE
+========================
+**/
+
+/**
+unit 4 page general style
+**/
+
+.intro-header img{
+	margin: 0 auto;
+	display: block;
+}
+
+.unitsSection h2{
+	margin-bottom: 10px;
+}
+
+#CFSImg{
+	border-radius: 50%;
+	border: 5px solid white;
+	background-color: white;
+	margin: 0 auto;
+	display: block;
+}
+
+#unit4-introduction-to-computer-systems-fundemental{
+	background-color: white;
+}
+
+#unit4-week-1-computer-system-fundemental{
+	background-color: #4cd137;
+}
+
+#unit4-week-2-computer-systems-fundemental{
+	background-color: #9c88ff;
+}
+
+#unit4-week-3-computer-systems-fundemental{
+	background-color: #0097e6;
+}
+
+#unit4-how-i-feel-about-the-course{
+	background-color: red;
+	padding-bottom: 10px;
+}
+
+/**
+mobile unit 4 page styles
+**/
+@media (max-width: 750px){
+
+#CFSImg {
+	width: 30%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+#ComputerSystemFundementalLogo {
+	width: 20%;
+	padding-top: 10px;
+}
+
+.unitsSection h2{
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.introduction-section p{
+	text-align: center;
+	margin: 0px auto;
+	padding: 20px 50px;
+}
+
+#logicCircuitImg{
+	width: 80%;
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+}
+
+#truthTableImg{
+	width: 80%;
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+}
+
+#unit4-week-1-paragraph{
+	padding: 20px 20px;
+	text-align: center;
+	font-size: 20px;
+}
+
+#BooleanSumQ1Img{
+	width: 80%;
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+}
+
+#BooleanSumQ2Img{
+	width: 80%;
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+}
+
+
+#unit4-week-2-paragraph{
+	padding: 20px 20px;
+	text-align: center;
+	margin-left: 10px;
+	font-size: 20px;
+}
+
+#CombinationalLogicCircuitQ1Img{
+	width: 80%;
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+}
+
+#CombinationalLogicCircuitQ2Img{
+	width: 80%;
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+}
+
+
+#unit4-week-3-paragraph{
+	padding: 20px 20px;
+	text-align: center;
+	margin-left: 10px;
+	font-size: 20px;
+}
+
+#unit4-main-content-how-i-feel-about-the-course{
+	width: 80%;
+	height: 300px;
+	overflow: hidden;
+	margin: 20px auto 0 auto;
+	background-color: red;
+	border-radius: 10px;
+}
+
+#unit4-main-content-how-i-feel-about-the-course p {
+	overflow: hidden;
+	background-color: white;
+	text-align: center;
+	margin-left: 10px;
+	padding: 15px;
+	}
+}
+
+/**
+Tablet unit 4 page styles
+**/
+@media (min-width: 750px) and (max-width:1200px) {
+
+#CFSImg{
+	width: 200px;
+	margin: 10px auto;
+	display: block;
+}
+
+#ComputerSystemFundementalLogo {
+	width: 100px;
+}
+
+.unitsSection h2{
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 45px;
+}
+
+.introduction-section{
+	background-color: white;
+}
+
+.introduction-section p{
+	text-align: center;
+	padding: 20px 80px;
+	width: 340px;
+	margin: 0 auto;
+}
+
+#logicCircuitImg{
+	display: block;
+	width: 750px;
+	margin: 30px auto;
+}
+
+#truthTableImg{
+	display: block;
+	height: 300px;
+	margin: 30px auto 0 auto;
+}
+
+#unit4-week-1-paragraph{
+	display: block;
+	padding: 20px 80px;
+	text-align: center;
+	font-size: 20px;
+}
+
+#BooleanSumQ1Img{
+	display: block;
+	height: 400px;
+	margin: 30px auto 0 auto;
+	width: 350px;
+}
+
+#BooleanSumQ2Img{
+	display: block;
+	height: 600px;
+	margin: 30px auto 0 auto;
+	width: 400px;
+}
+
+#unit4-week-2-paragraph{
+	display: block;
+	padding: 20px 80px;
+	text-align: center;
+	font-size: 20px;
+}
+
+#CombinationalLogicCircuitQ1Img{
+	display: block;
+	width: 750px;
+	margin: 30px auto 0 auto;
+}
+
+#CombinationalLogicCircuitQ2Img{
+	display: block;
+	width: 750px;
+	margin: 30px auto 0 auto;
+}
+
+#unit4-week-3-paragraph{
+	display: block;
+	padding: 20px 80px;
+	text-align: center;
+	font-size: 20px;
+}
+
+#unit4-main-content-how-i-feel-about-the-course{
+	width: 500px;
+	margin: 20px auto;
+	padding: 10px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#unit4-main-content-how-i-feel-about-the-course p{
+	background-color: white;
+	text-align: center;
+	padding: 10px 0;
+	font-size: 20px;
+}
+
+}
+
+/**
+Desktop unit 4 page styles
+**/
+
+@media (min-width: 1200px) {
+
+.intro-header h2 {
+	display: inline-block;
+	border-bottom: 3px solid;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.unitsSection{
+	background: #C0C0C0;
+	overflow: hidden;
+	padding: 40px 0 0 0;
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+}
+
+#unit4-content-container {
+	background: #585858;
+	overflow: hidden;
+	width: 100%;
+}
+
+#unit4-content-container .portfolioContent {
+	float: left;
+	border-radius: 10px;
+	margin: 0 1.66% 0 1.66%;
+	margin-bottom: 10px;
+}
+
+
+#CFSImg{
+	width: 150px;
+	height: 150px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 0 auto;
+	border: 5px solid white;
+}
+
+#unit4-introduction-to-computer-systems-fundemental{
+	background:white;
+	width:100%;
+	margin: 5px auto 0 auto;
+}
+
+#unit4-computer-systems-fundemental-introduction-main-content{
+	padding: 40px;
+	text-align: center;
+}
+
+#ComputerSystemFundementalLogo {
+	width: 70px;
+	height: 70px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+}
+
+#unit4-week-1-computer-system-fundemental{
+	background-color: #81ecec;
+}
+
+#unit4-main-content-for-week-1{
+	width: 950px;
+	overflow: hidden;
+	margin: 10px auto 0 auto;
+}
+
+#unit4-main-content-for-week-1 p{
+	width: 250px;
+	overflow: hidden;
+	margin: -0px 0 10px 0;
+	padding-bottom: 10px;
+}
+
+#unit4-week-2-computer-systems-fundemental{
+	background-color: #FFBFD5;
+}
+
+#unit4-main-content-for-week-2{
+	width: 950px;
+	overflow: hidden;
+	margin: 10px auto 0 auto;
+}
+
+#unit4-main-content-for-week-2 p{
+	width: 250px;
+	overflow: hidden;
+}
+
+#unit4-week-3-computer-systems-fundemental{
+	background-color: #e17055;
+}
+
+#unit4-main-content-for-week-3{
+	width: 1200px;
+	overflow: hidden;
+	margin: 10px auto 0 auto;
+}
+
+#unit4-main-content-for-week-3 p{
+	width: 250px;
+	overflow: hidden;
+}
+
+#unit4-how-i-feel-about-the-course{
+	background-color: #d63031;
+	padding-bottom: 10px;
+}
+
+#unit4-main-content-how-i-feel-about-the-course{
+	width: 500px;
+	height: 200px;
+	overflow: hidden;
+	margin: 10px auto 0 auto;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#unit4-main-content-how-i-feel-about-the-course p {
+	width: 450px;
+	overflow: hidden;
+	background-color: white;
+	text-align: center;
+	margin-left: 10px;
+	padding-top: 10px;
+}
+
+
+.unit4-section-item{
+	margin: 0 1.66%;
+	width: 30%;
+	float:left;
+	margin-top: 20px;
+	padding-bottom: 10px;
+}
+
+.unit4-section-item img{
+	max-width: 100%;
+	}
+}
+
+/** ========================
+PERSONAL DEVELOPMENT PAGE
+========================
+**/
+
+/*
+Personal Development styles
+*/
+
+#personal-development-h1{
+	font-size: 30px;
+	text-align: center;
+	padding-top: 40px;
+	color: white;
+}
+
+#personal-development-content-container {
+	overflow: hidden;
+	padding: 40px 0 0 0;
+	width: 100%;
+}
+
+#personal-development-about-Me {
+	width: 95%;
+	background-color: #28323B;
+	padding-bottom: 40px;
+}
+
+#personal-development-extra-Information {
+	width: 95%;
+	background-color: #28323B;
+	padding-bottom: 40px;
+}
+
+#personal-development-content-container .portfolioContent {
+	float: left;
+	border-radius: 10px;
+	margin: 0 2.5% 0 2.5%;
+	margin-bottom: 10px;
+}
+
+#personal-development-my-pic{
+	border-radius: 50%;
+	width: 190px;
+	height: 190px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 20px auto;
+	border: 3px solid white;
+}
+
+#personal-development-soft-skills{
+	padding-bottom: 5px;
+}
+
+#personal-development-soft-skills{
+	background:#FFD400;
+	width:80%;
+	margin: 40px auto 0 auto;
+	border-radius: 10px;
+}
+
+#personal-development-my-soft-skills li{
+	margin: 20px;
+	text-align: center;
+	list-style-position: inside;
+}
+
+#introduction hr{
+	width: 24%;
+	height:2px;
+	background-color: black;
+	margin-left: 250px;
+}
+
+#introduction p{
+	padding: 20px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+/*
+Area of improvement section
+*/
+
+#personal-development-areas-of-improvement{
+	background:#FFD400;
+	width:50%;
+	margin: 50px auto 0 auto;
+	border-radius: 10px;
+	padding-bottom: 3px;
+}
+
+#personal-development-improvement ul{
+	padding: 5px;
+}
+
+#personal-development-improvement li{
+	margin: 20px;
+	text-align: center;
+	list-style-position: inside;
+}
+
+#personal-development-areas-of-improvement hr{
+	width: 20%;
+	height:2px;
+	background-color: black;
+	margin-left: 130px;
+}
+
+#personal-development-areas-of-improvement p{
+	padding: 20px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+/*
+examples of my soft skills.
+*/
+
+#personal-development-examples-of-my-soft-skkills h2 {
+	margin: 10px auto 40px auto;
+}
+
+#personal-development-examples-of-my-soft-skkills {
+	background:#FFD400;
+	width:80%;
+	margin: 30px auto 0 auto;
+	padding: 30px;
+	border-radius: 10px;
+}
+
+.unitsSection h2{
+	margin-bottom: 10px;
+}
+
+/*
+footer
+*/
+footer{
+	height: 50px;
+	background-color: #fdcb6e;
+	text-align: center;
+}
+
+footer p{
+	height: 30px;
+	background-color: #FFD145;
+	text-align: center;
+}
